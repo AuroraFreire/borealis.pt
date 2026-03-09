@@ -4,19 +4,39 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: JetBrains Mono;
+    src: url(fonts/JetBrainsMono-Bold.ttf);
+}
+
 body,
 html {
-    background: #001523;
-    cursor: url(fish-cursor.png), auto;
+    background-color: #001523;
     margin: 0;
     width: 100vw;
     height: 100vh;
     overflow: hidden;
+    font-family: JetBrains Mono, sans-serif;
 }
 
-h1 {
+p {
     color: #f1f1f6;
-    text-align: center;
+}
+
+.title {
+    font-size: 25px;
+    position: relative;
+    top: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.intro {
+    font-size: 25px;
+    position: relative;
+    top: 35px;
+    display: flex;
+    justify-content: center;
 }
 
 .box {
@@ -28,9 +48,59 @@ h1 {
     padding-bottom: 39px;
 }
 
-body {
-    display: flex;
-    justify-content: center;
+.intro span {
+    position: relative;
+}
+
+.intro span::before {
+    content: "coder";
+    color: #ff9100;
+    animation: words 20s infinite;
+}
+
+.intro span::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 100%;
+    background-color: #001523;
+    border-left: 2px solid #ff9100;
+    right: -8px;
+    animation: cursor .8s infinite;
+}
+
+@keyframes cursor {
+    to {
+        border-left: 2px solid #ff910000;
+    }
+}
+
+@keyframes words {
+
+    0%,
+    20% {
+        content: "coder"
+    }
+
+    21%,
+    40% {
+        content: "cosplayer"
+    }
+
+    41%,
+    60% {
+        content: "Hack Clubber"
+    }
+
+    61%,
+    80% {
+        content: "surfer"
+    }
+
+    81%,
+    100% {
+        content: "procrastinator"
+    }
 }
 
 section {
@@ -46,7 +116,7 @@ section .wave {
     left: 0;
     width: 100%;
     height: 100px;
-    background-image: url(wave.png);
+    background-image: url(images/wave.png);
     background-size: 1000px 100px;
 }
 
