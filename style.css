@@ -4,6 +4,13 @@
     box-sizing: border-box;
 }
 
+#css-toggle {
+    position: fixed;
+    z-index: 99999;
+    top: 10px;
+    left: 10px;
+}
+
 @font-face {
     font-family: JetBrains Mono;
     src: url(fonts/JetBrainsMono-Bold.ttf);
@@ -45,6 +52,13 @@ hr {
     top: 25px;
     display: flex;
     justify-content: center;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 42px;
 }
 
 .intro {
