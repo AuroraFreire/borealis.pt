@@ -87,7 +87,7 @@ hr {
     left: 100px;
 }
 
-.projects p {
+.projects p.title {
     display: flex;
     justify-content: center;
     position: relative;
@@ -96,19 +96,17 @@ hr {
 }
 
 .projects p.chrono-deck {
-    display: flex;
-    justify-content: center;
     position: relative;
-    top: 10px;
-    font-size: 90px;
+    top: 50px;
+    left: 20px;
+    font-size: 20px;
 }
 
-.chrono-deck p {
-    display: flex;
-    justify-content: center;
+.projects p.info {
     position: relative;
-    top: 10px;
-    font-size: 90px;
+    top: 75px;
+    padding-left: 15px;
+    padding-right: 10px;
 }
 
 .projects img {
@@ -117,7 +115,7 @@ hr {
     justify-content: center;
     position: relative;
     top: 60px;
-    left: 10px;
+    left: 17px;
     border-radius: 10px;
 }
 
