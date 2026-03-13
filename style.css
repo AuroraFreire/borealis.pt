@@ -47,36 +47,6 @@ hr {
     justify-content: center;
 }
 
-.projects {
-    height: 650px;
-    width: 500px;
-    color: #251d26;
-    background-color: #251d26;
-    border-radius: 35px;
-    position: relative;
-    top: 90px;
-    left: 100px;
-}
-
-.projects p {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    top: 10px;
-    font-size: 20px;
-}
-
-.projects img {
-    width: 60%;
-    display: flex;
-    justify-content: center;
-    position: relative;
-    top: 60px;
-    left: 10px;
-    border-radius: 10px;
-    :
-}
-
 .intro {
     font-size: 25px;
     position: relative;
@@ -104,6 +74,69 @@ hr {
     border-left: 2px solid #d23e32;
     right: -8px;
     animation: cursor .8s infinite, typing 20s steps(14) infinite;
+}
+
+.projects {
+    height: 650px;
+    width: 500px;
+    color: #251d26;
+    background-color: #251d26;
+    border-radius: 35px;
+    position: relative;
+    top: 90px;
+    left: 100px;
+}
+
+.projects p {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 10px;
+    font-size: 20px;
+}
+
+.projects p.chrono-deck {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 10px;
+    font-size: 90px;
+}
+
+.chrono-deck p {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 10px;
+    font-size: 90px;
+}
+
+.projects img {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 60px;
+    left: 10px;
+    border-radius: 10px;
+}
+
+.projects::before {
+    content: "Projects";
+    position: absolute;
+    background-color: #d23e32;
+    color: white;
+    padding: 0.5em 1em;
+    border-radius: 100px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+    transform: translateY(-30px) rotate(25deg);
+    opacity: 0;
+    transition: 200ms cubic-bezier(.51, -0.02, .29, 2.49);
+}
+
+.projects:hover::before {
+    transform: translateY(-65px) rotate(0);
+    opacity: 1;
 }
 
 @keyframes cursor {
