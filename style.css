@@ -47,21 +47,42 @@ hr {
     justify-content: center;
 }
 
+.projects {
+    height: 650px;
+    width: 500px;
+    color: #251d26;
+    background-color: #251d26;
+    border-radius: 35px;
+    position: relative;
+    top: 90px;
+    left: 100px;
+}
+
+.projects p {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 10px;
+    font-size: 20px;
+}
+
+.projects img {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 60px;
+    left: 10px;
+    border-radius: 10px;
+    :
+}
+
 .intro {
     font-size: 25px;
     position: relative;
     top: 35px;
     display: flex;
     justify-content: center;
-}
-
-.box {
-    margin: 40px 35px 80px;
-    height: 400px;
-    width: 450px;
-    border-radius: 35px;
-    background-color: #1b141c;
-    padding-bottom: 39px;
 }
 
 .intro span {
